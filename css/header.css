@@ -60,7 +60,7 @@ header {
 .header-nav {
     width: var(--main-header-width);
     margin: 0 auto;
-    padding: 2vh 0;
+    /* padding: 2vh 0; */
     display: flex;
     align-items: center;
 }
@@ -83,8 +83,21 @@ header hr {
 
 .header-menu ul {
     display: flex;
-    justify-content: space-between;
     list-style: none;
+}
+
+.header-menu ul li {
+    width: auto;
+    padding: 2vh .7vw;
+    transition: 0.15s ease-in;
+}
+
+.header-menu ul li:hover {
+    background-color: #1a9bdc;
+}
+
+.header-menu ul li:hover a {
+    color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -133,9 +146,9 @@ header hr {
         font-size: 1.3vw;
     }
 
-    .header-nav {
-        padding: 1.5vh 0;
-        justify-content: space-around;
+    .header-menu ul li {
+        width: auto;
+        padding: 1.5vh .7vw;
     }
 
     .header-menu {

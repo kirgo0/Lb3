@@ -30,6 +30,10 @@ a {
     color: none;
 }
 
+.blue-button_container {
+    height: 70px;
+}
+
 .blue-button {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -41,6 +45,12 @@ a {
     padding: 15px 25px;
     color: #fff;
     box-shadow: 5px 5px 10px rgb(197, 197, 197);
+    transition: 0.4s;
+}
+
+.blue-button:hover {
+    font-size: 1.4vw;
+    background-color: #22a3e3;
 }
 
 @media screen and (max-width: 1024px) {
@@ -57,6 +67,10 @@ a {
         padding: 10px 15px;
     }
 
+    .blue-button_container {
+        height: 40px;
+    }    
+
 }
 
 @media screen and (max-width: 768px) {
@@ -72,6 +86,10 @@ a {
     .blue-button {
         padding: 8px 12px;
     }
+    
+    .blue-button_container {
+        height: 30px;
+    }    
 
 }
 
@@ -87,6 +105,11 @@ a {
     .blue-button {
         font-size: 2vw;
         padding: 8px 12px;
+    }
+
+    .blue-button:hover {
+        font-size: 2.2vw;
+        background-color: #22a3e3;
     }
 
 }

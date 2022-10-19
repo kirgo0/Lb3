@@ -1,0 +1,136 @@
+.header-contacts_image i {
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+.second-block_content_img i {
+    color: black;
+    font-size: 2vw;
+}
+
+.third-block_img i {
+    color: #fff;
+    font-size: 2.4vw;
+}
+
+.fourth-block_img i {
+    color: #fff;
+    font-size: 3vw;
+}
+
+.fifth-block-content_button_img i {
+    color: #0087be;
+    font-size: 1vw;
+}
+
+.sevent-block-content_team-member_social-newtworks i {
+    color:#0087be;
+    font-size: 1.3vw;
+}
+
+.footer-info-content_contact-img i {
+    font-size: 2.1vw;
+    color: #8d8d8d;
+}
+
+.footer-info-content_list li i {
+    font-size: .6vw;
+    color: #0087be;
+}
+
+.footer-info-content-social-networks i {
+    font-size: 1.8vw;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .fa-clock {
+        font-size: 2vw;
+    }
+
+    .fa-solid {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fa-clock {
+        font-size: 1.6vw;
+    }
+    
+    .fa-solid {
+        font-size: 1.6vw;
+    }
+    
+    .third-block_img i {
+        font-size: 2.1vw;
+    }
+    
+    .fourth-block_img i {
+        font-size: 4vw;
+    }
+    
+    .fifth-block-content_button_img i {
+        font-size: .8vw;
+    }
+    
+    .sevent-block-content_team-member_social-newtworks i {
+        font-size: 1.45vw;
+    }
+    
+    .footer-info-content_contact-img i {
+        font-size: 3.1vw;
+    }
+    
+    .footer-info-content-social-networks i {
+        font-size: 1.7vw;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .second-block_content_img i {
+        font-size: 2.4vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .second-block_content_img i {
+        font-size: 6vw;
+    }
+
+    .third-block_img i {
+        font-size: 4vw;
+    }
+
+    .fourth-block_img i {
+        font-size: 10vw;
+    }
+
+    .fifth-block-content_button_img i {
+        font-size: 2vw;
+    }
+
+    .sevent-block-content_team-member_social-newtworks i {
+        font-size: 5.5vw;
+    }
+
+    .footer-info-content-social-networks i {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width:320px) {
+    
+    .second-block_content_img i {
+        font-size: 8vw;
+    }
+
+    
+    .fourth-block_img i {
+        font-size: 10vw;
+    }
+}

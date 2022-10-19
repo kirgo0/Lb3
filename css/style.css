@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../fonts/Nexa-Trial-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+    --main-header-width: 80%;
+    --main-block-width: 80%;
+    --main-block-padding: 14vh;
+    --main-text-gap: 40px;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+.blue-button {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    background-color: #1a9bdc;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    color: #fff;
+    box-shadow: 5px 5px 10px rgb(197, 197, 197);
+}
+
+@media screen and (max-width: 1024px) {
+
+    html {
+        --main-header-width: 95%;
+        --main-block-width: 90%;
+        --main-block-padding: 7vh;
+        --main-text-gap: 20px;
+        scroll-padding-top: 50px;
+    }
+
+    .blue-button {
+        padding: 10px 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        --main-header-width: 90%;
+        --main-block-width: 85%;
+        --main-block-padding: 5vh;
+        --main-text-gap: 10px;
+        scroll-padding-top: 30px;
+    }
+
+    .blue-button {
+        padding: 8px 12px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    html {
+        --main-header-width: 90%;
+        --main-block-width: 85%;
+        --main-block-padding: 5vh;
+        --main-text-gap: 10px;
+    }
+
+    .blue-button {
+        font-size: 2vw;
+        padding: 8px 12px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    html {
+        --main-header-width: 90%;
+        --main-block-width: 90%;
+        --main-block-padding: 5vh;
+        --main-text-gap: 10px;
+    }
+
+    .blue-button {
+        width: 40%;
+        font-size: 2vw;
+        padding: 10px 14px;
+    }
+
+}

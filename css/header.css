@@ -1,0 +1,180 @@
+header {
+    background-color: #fff;
+    width: 100%;
+}
+
+.header-info {
+    width: var(--main-header-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 106px;
+}
+
+.header-contacts {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-contacts-contact {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.header-contacts_image {
+    display: flex;
+    background: #1a9bdc;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-contacts_text {
+    font-size: .8vw;
+    font-family: 'Open Sans', sans-serif;
+    color: #6a6a6a;
+}
+
+.header-contacts_text b {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-contacts_text p {
+    font-weight: normal;
+}
+
+.header-nav-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 256;
+    background-color: #fff;
+}
+
+.header-nav {
+    width: var(--main-header-width);
+    margin: 0 auto;
+    padding: 2vh 0;
+    display: flex;
+    align-items: center;
+}
+
+header hr {
+    width: var(--main-header-width);
+    margin: 0 auto;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.header-menu {
+    font-family: 'Nexa';
+    font-size: 1.4vw;
+    width: 50%;
+}
+
+.header-menu a {
+    color: #6a6a6a;
+}
+
+.header-menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header-contacts {
+        width: 65%;
+    }
+
+    .header-contacts_image {
+        height: 40px;
+        width: 40px;
+    }
+
+    .header-contacts_text {
+        font-size: 1.2vw;
+    }
+
+    .header-menu {
+        font-size: 1.8vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        display: none;
+    }
+
+    .header-info {
+        justify-content: center;
+        height: 70px;
+    }
+
+    .header-contacts {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .header-contacts_image {
+        height: 30px;
+        width: 30px;
+    }
+
+    .header-contacts_text {
+        font-size: 1.3vw;
+    }
+
+    .header-nav {
+        padding: 1.5vh 0;
+        justify-content: space-around;
+    }
+
+    .header-menu {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .header-info {
+        height: 40px;
+    }
+
+    .header-contacts_text {
+        font-size: 2vw;
+    }
+
+    .header-contacts_image {
+        display: none;
+    }
+
+    .header-contacts {
+        justify-content: space-between;
+    }
+
+    header hr {
+        display: none;
+    }
+
+    .header-nav {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    
+    .header-contacts_text {
+        font-size: 2.4vw;
+    }
+}

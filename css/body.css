@@ -62,7 +62,6 @@
 }
 
 .second-block_content_img {
-    transform: translate(0px, 70px);
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -71,25 +70,22 @@
     height: 5vw;
     border-radius: 50%;
     background-color: #fff;
-    transition: transform 1.3s ease-in;
+    transition: opacity 2.5s ease-in;
 }
 
 .second-block_content_wrap p {
-    transform: translate(0px, -60px);
     opacity: 0;
-    transition: transform 1.3s ease-in;
+    transition: all 1s ease-in;
 }
 
 .second-block_content_wrap:hover .second-block_content_img {
-    transform: translate(0px, 0px);
     opacity: 1;
-    transition: 0.2s ease-in;
+    transition: 0.4s ease-in;
 }
 
 .second-block_content_wrap:hover p {
-    transform: translate(0px, 0px);
     opacity: 1;
-    transition: 0.2s ease-in;
+    transition: .4s ease-in;
 }
 
 /* THIRD BLOCK */ 

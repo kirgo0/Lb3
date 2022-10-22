@@ -49,9 +49,10 @@ a {
 }
 
 .blue-button:hover {
-    font-size: 1.4vw;
+    transform: scale(1.1);
     background-color: #22a3e3;
 }
+
 
 @media screen and (max-width: 1024px) {
 
@@ -66,10 +67,6 @@ a {
     .blue-button {
         padding: 10px 15px;
     }
-
-    .blue-button_container {
-        height: 40px;
-    }    
 
 }
 
@@ -87,10 +84,6 @@ a {
         padding: 8px 12px;
     }
     
-    .blue-button_container {
-        height: 30px;
-    }    
-
 }
 
 @media screen and (max-width: 425px) {
@@ -105,11 +98,6 @@ a {
     .blue-button {
         font-size: 2vw;
         padding: 8px 12px;
-    }
-
-    .blue-button:hover {
-        font-size: 2.2vw;
-        background-color: #22a3e3;
     }
 
 }

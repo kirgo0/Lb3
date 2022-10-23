@@ -332,6 +332,7 @@
 
 .sixth-block-content_gallary-picture img {
     width: 100%;
+    box-shadow: 4px 4px 1px #b1eeca;
 }
 
 /* SEVENTH BLOCK */

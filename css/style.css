@@ -78,6 +78,43 @@ a {
     transform: translate3d(0 , calc(var(--scrollTop)/3.4 - 350px), 0);
 }
 
+.caption-animation-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.2s ease;
+}
+
+.caption-animation-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.text-animation-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: 1s ease-in;
+}
+
+.text-animation-show {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.picture-hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all .8s ease;
+}
+
+.picture-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 
 @media screen and (max-width: 1024px) {
 

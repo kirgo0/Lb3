@@ -1,7 +1,7 @@
 /* FIRST BLOCK */ 
 
 .first-block {
-    background-image: url('../img/doctor.png');
+    background-image: url('../img/dcotor-parallaxed-bg.png');
     display: flex;
     height: 750px;
     background-size: cover;

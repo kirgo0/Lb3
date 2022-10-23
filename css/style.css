@@ -53,6 +53,31 @@ a {
     background-color: #22a3e3;
 }
 
+.first-block {
+    overflow: hidden;
+    position: relative;
+}
+
+.first-block-parallax-image {
+    background-image: url('../img/dcotor-parallaxed.png');
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+    background-position-x: calc(var(--scrollTop)/2.8);
+    height: 750px;
+    z-index: 1;
+}
+
+.third-block {
+    overflow: hidden;
+}
+
+.third-block_centered-img img {
+    transform: translate3d(0 , calc(var(--scrollTop)/3.4 - 350px), 0);
+}
+
 
 @media screen and (max-width: 1024px) {
 
@@ -66,6 +91,16 @@ a {
 
     .blue-button {
         padding: 10px 15px;
+    }
+
+    .first-block-parallax-image {
+        background-position-y: 0;
+        height: 500px;
+        z-index: 1;
+    }
+
+    .third-block_centered-img img {
+        transform: translate3d(0 , calc(var(--scrollTop)/3.4 - 200px), 0);
     }
 
 }

@@ -1,3 +1,7 @@
+window.addEventListener('scroll', e => {
+    document.body.style.cssText = `--scrollTop: ${this.scrollY}px`;
+})
+
 var buttons = document.getElementsByClassName("fifth-block-content_button");
 
 for(let i = 0; i < buttons.length; i++) {

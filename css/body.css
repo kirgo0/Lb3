@@ -233,7 +233,11 @@
 .fifth-block-content_buttons {
     display: flex;
     flex-direction: column;
-    gap: var(--main-text-gap);    
+    gap: var(--main-text-gap); 
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .fifth-block-content_button-container {
@@ -604,6 +608,12 @@ footer {
     .second-block_content_img {
         width: 14vw;
         height: 14vw;
+        opacity: 1;
+    }
+    
+    .second-block_content_wrap p {
+        transition: none;
+        opacity: 1;
     }
 
     .third-block {

@@ -1,7 +1,10 @@
+// Getting scroll value for Parallax
 window.addEventListener('scroll', e => {
     document.body.style.cssText = `--scrollTop: ${this.scrollY}px`;
 })
 
+
+// Heart Treatment Script
 var buttons = document.getElementsByClassName("fifth-block-content_button");
 
 for(let i = 0; i < buttons.length; i++) {
@@ -11,7 +14,6 @@ for(let i = 0; i < buttons.length; i++) {
 }
 
 function myFunction (event) {
-    // event.style.backgroundColor = "red";
     console.log(event.parentNode);
     if(event.parentNode.classList.contains('not-active-button')) {
         for(let i = 0; i < buttons.length; i++) {
@@ -32,46 +34,23 @@ function myFunction (event) {
     }
 }
 
-captionsToAnimate = document.querySelectorAll('.caption-animation-hidden');
 
-var observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('caption-animation-show');
-        } else {
-            entry.target.classList.remove('caption-animation-show');
-        }
+// Scroll animation fucntion for styles changing 
+function addScrollAnimation(elementsSelector, elementsSelectorShow) {
+    elementsToAnimate = document.querySelectorAll(elementsSelector);
+    var observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add(elementsSelectorShow);
+            }
+        });
     });
-});
+    
+    elementsToAnimate.forEach((element) => observer.observe(element));
+}
 
-captionsToAnimate.forEach((element) => observer.observe(element));
+addScrollAnimation('.text-animation-hidden','text-animation-show');
 
+addScrollAnimation('.picture-hidden','picture-show');
 
-textsToAnimate = document.querySelectorAll('.text-animation-hidden');
-
-var observer2 = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('text-animation-show');
-        } else {
-            entry.target.classList.remove('text-animation-show');
-        }
-    });
-});
-
-textsToAnimate.forEach((element) => observer2.observe(element));
-
-
-picturesToAnimate = document.querySelectorAll('.picture-hidden');
-
-var observer3 = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('picture-show');
-        } else {
-            entry.target.classList.remove('picture-show');
-        }
-    });
-});
-
-picturesToAnimate.forEach((element) => observer3.observe(element));
+addScrollAnimation('.caption-animation-hidden','caption-animation-show');

@@ -345,7 +345,7 @@
     width: var(--main-block-width);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: var(--main-text-gap);
     margin: 0 auto;
     padding: var(--main-block-padding) 0;
 }
@@ -364,6 +364,7 @@
 }
 
 .seventh-block-content_team-member {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: var(--main-text-gap);
@@ -516,6 +517,11 @@ footer {
 
     .sixth-block_wrap {
         width: 80%;
+    }
+
+    .seventh-block-content_team-member {
+        width: 22%;
+        padding: 5px;
     }
 
     .seventh-block-content_team-member_img {

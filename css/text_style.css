@@ -307,18 +307,21 @@ html {
     .first-block_content b,
     .second-block_content b,
     .third-block_text b,
-    .third-block_content_caption b,
     .fifth-block-content_text b,
     .fifth-block-content_button b,
     .sixth-block-content_text b,
     .seventh-block-content_text b,
     .eighth-block-content b,
     .footer-info-content_capture {
-        font-size: 4.4vw;
+        font-size: 6vw;
+    }
+
+    .third-block_content_caption b {
+        font-size: 6vw;
     }
 
     html {
-        --main-paragraph-font-size: 3.5vw;
+        --main-paragraph-font-size: 4.2vw;
     }
 
     .blue-button {

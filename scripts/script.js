@@ -51,10 +51,14 @@ function addScrollAnimation(elementsSelector, elementsSelectorShow) {
 
 addScrollAnimation('.text-animation-hidden','text-animation-show');
 
+addScrollAnimation('.text-animation-bottom-hidden','text-animation-bottom-show')
+
 addScrollAnimation('.picture-hidden','picture-show');
 
 addScrollAnimation('.caption-animation-hidden','caption-animation-show');
 
-addScrollAnimation('.member-animation-hidden','member-animation-show');
+addScrollAnimation('.seventh-block-content_team-member','member-animation-show');
 
 addScrollAnimation('.second-block-animation-hidden','second-block-animation-show');
+
+addScrollAnimation('.fifth-block-content_button','fifth-button-animation-show');

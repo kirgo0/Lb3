@@ -111,15 +111,15 @@
     }
 
     .fifth-block-content_button_img i {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .sevent-block-content_team-member_social-newtworks i {
-        font-size: 5.5vw;
+        font-size: 5.3vw;
     }
 
     .footer-info-content-social-networks i {
-        font-size: 7vw;
+        font-size: 5.5vw;
     }
 }
 
@@ -129,8 +129,12 @@
         font-size: 8vw;
     }
 
-    
     .fourth-block_img i {
         font-size: 10vw;
     }
+
+    .fifth-block-content_button_img i {
+        font-size: 3vw;
+    }
+
 }

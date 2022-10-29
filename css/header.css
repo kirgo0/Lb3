@@ -160,19 +160,23 @@ header hr {
 @media screen and (max-width: 425px) {
 
     .header-info {
-        height: 40px;
+        height: 50px;
     }
 
     .header-contacts_text {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .header-contacts_image {
         display: none;
     }
 
+    .header-contacts-contact:nth-child(2) {
+        display: none;
+    }
+
     .header-contacts {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     header hr {
@@ -188,6 +192,6 @@ header hr {
 @media screen and (max-width: 320px) {
     
     .header-contacts_text {
-        font-size: 2.4vw;
+        font-size: 3.4vw;
     }
 }

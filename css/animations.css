@@ -108,3 +108,31 @@
     filter: blur(0px);
     transform: translateY(0);
 }
+
+@media screen and (max-width: 1024px) {
+
+    .first-block-parallax-image {
+        background-position-y: 0;
+        height: 500px;
+        z-index: 1;
+    }
+
+    .third-block_centered-img img {
+        transform: translate3d(0 , calc(var(--scrollTop)/3.4 - 200px), 0);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .first-block-parallax-image {
+        background-position-x: calc(var(--scrollTop)/2.8 + 50px);
+        height: 350px;
+        z-index: 1;
+    }
+
+    .third-block_centered-img img {
+        transform: translate3d(0 , calc(var(--scrollTop)/5.4 - 100px), 0);
+    }
+    
+}

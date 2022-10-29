@@ -48,111 +48,6 @@ a {
     transition: 0.4s;
 }
 
-.blue-button:hover {
-    transform: scale(1.1);
-    background-color: #22a3e3;
-}
-
-.first-block {
-    overflow: hidden;
-    position: relative;
-}
-
-.first-block-parallax-image {
-    background-image: url('../img/dcotor-parallaxed.png');
-    width: 100%;
-    position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -40px;
-    background-position-x: calc(var(--scrollTop)/2.8);
-    height: 750px;
-    z-index: 1;
-}
-
-.third-block {
-    overflow: hidden;
-}
-
-.third-block_centered-img img {
-    transform: translate3d(0 , calc(var(--scrollTop)/3.4 - 350px), 0);
-}
-
-.seventh-block-content_team-member {
-    transition: transform 0.5s ease;
-}
-
-.seventh-block-content_team-member:hover {
-    transform: scale(1.05);
-    box-shadow: 3px 3px 10px #b3e5fe;
-}
-
-.seventh-block-content_team-member:hover .sevent-block-content_team-member_social-newtworks a i{
-    animation-name: social-networks;
-    animation-duration: .7s;
-    animation-timing-function: ease-in;
-}
-
-.seventh-block-content_team-member:hover .sevent-block-content_team-member_social-newtworks a:nth-child(2) i{
-    animation-delay: .3s;
-}
-
-.seventh-block-content_team-member:hover .sevent-block-content_team-member_social-newtworks a:nth-child(3) i{
-    animation-delay: .5s;
-}
-
-@keyframes social-networks {
-    0% {
-        color: #0087be;;
-        transform: scale(1);
-    }
-    50% {
-        color: #1a9bdc;
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.caption-animation-hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1.2s ease;
-}
-
-.caption-animation-show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-.text-animation-hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transition: 1s ease-in;
-}
-
-.text-animation-show {
-    opacity: 1;
-    filter: blur(0);
-}
-
-.picture-hidden {
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateX(-100%);
-    transition: all .8s ease;
-}
-
-.picture-show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-
 @media screen and (max-width: 1024px) {
 
     html {
@@ -165,16 +60,6 @@ a {
 
     .blue-button {
         padding: 10px 15px;
-    }
-
-    .first-block-parallax-image {
-        background-position-y: 0;
-        height: 500px;
-        z-index: 1;
-    }
-
-    .third-block_centered-img img {
-        transform: translate3d(0 , calc(var(--scrollTop)/3.4 - 200px), 0);
     }
 
 }
@@ -191,10 +76,6 @@ a {
 
     .blue-button {
         padding: 8px 12px;
-    }
-    
-    .third-block_centered-img img {
-        transform: translate3d(0 , calc(var(--scrollTop)/5.4 - 100px), 0);
     }
     
 }

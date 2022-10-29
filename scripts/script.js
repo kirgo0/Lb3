@@ -54,3 +54,7 @@ addScrollAnimation('.text-animation-hidden','text-animation-show');
 addScrollAnimation('.picture-hidden','picture-show');
 
 addScrollAnimation('.caption-animation-hidden','caption-animation-show');
+
+addScrollAnimation('.member-animation-hidden','member-animation-show');
+
+addScrollAnimation('.second-block-animation-hidden','second-block-animation-show');
